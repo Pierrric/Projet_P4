@@ -65,7 +65,7 @@ def user_JointForces(mbs_data, tsim):
         F2 = y[j]+(y[j+1]-y[j])*((T2_2-x[j])/(x[j+1]-x[j]))
     else:
         for k in range(8):
-            if x[k] < T2_1 >= x[k+1]:
+            if x[k] < T2_2 >= x[k+1]:
                 j = k
                 F2 = y[j]+(y[j+1]-y[j])*((T2_2-x[j])/(x[j+1]-x[j]))
                 break
